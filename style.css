@@ -1,0 +1,54 @@
+/* ============ */
+/* Containers */
+/* ============ */
+
+.container {
+    display: flex;
+    width: 1000px; 
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.background-img-container {
+    background-color: red;
+    position: relative;
+    display: flex;
+    justify-content: stretch;
+}
+
+
+
+.background-text {
+    display: flex;
+    position: absolute;
+    flex-basis: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+
+
+.flexbox-container {
+    background-color: blue;
+    display: flex;
+    flex: 2 1 66%;
+    justify-content: center;
+}
+
+/* ============ */
+/* Images */
+/* ============ */
+
+.background-img {
+    width:100%;
+    height:100%;
+}
+
+.odin-logo {
+    max-width:100%;
+    max-height:100%;
+}
