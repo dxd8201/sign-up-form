@@ -1,10 +1,23 @@
 /* ============ */
+/* General */
+/* ============ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+/* ============ */
 /* Containers */
 /* ============ */
 
 .container {
     display: flex;
-    width: 1000px; 
+    width: 180vh; 
     height: 100vh;
     margin: 0 auto;
 }
@@ -14,15 +27,18 @@
     position: relative;
     display: flex;
     justify-content: stretch;
+    overflow: hidden;
+    
 }
-
-
 
 .background-text {
     display: flex;
+    justify-content: center;
     position: absolute;
     flex-basis: 100%;
-    top: 50%;
+    width: 100%;
+    height: 20%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
@@ -30,13 +46,29 @@
     background-color: rgba(0, 0, 0, 0.377);
 }
 
+.background-text > * {
+    padding: 1rem;
+}
 
 
 .flexbox-container {
     background-color: blue;
     display: flex;
+    flex-direction: column;
     flex: 2 1 66%;
     justify-content: center;
+}
+
+.text-container {
+    background-color: rgb(190, 184, 184);
+}
+
+.form-container {
+    background-color: rgb(241, 236, 236);
+}
+
+.btn-container {
+    background-color: rgb(190, 184, 184);
 }
 
 /* ============ */
@@ -44,11 +76,23 @@
 /* ============ */
 
 .background-img {
-    width:100%;
-    height:100%;
+    /* width:100%;
+    height: auto; */
+    transform: scale(1.2);
+    object-fit: cover;
+    
 }
 
 .odin-logo {
-    max-width:100%;
-    max-height:100%;
+    max-width:75%;
+    max-height: 75%;
+}
+
+/* ============ */
+/* Text */
+/* ============ */
+
+.odin-text {
+    font-size: 6rem;
+    font-family: 'Shadows Into Light', cursive;
 }
