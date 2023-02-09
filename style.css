@@ -60,15 +60,40 @@ body {
 }
 
 .text-container {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(190, 184, 184);
+    flex: 1 1 35%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 4rem 6rem 4rem 2rem;
+}
+
+.text-container span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text-container span:nth-child(3) {
+    margin-top: 2rem;
 }
 
 .form-container {
     background-color: rgb(241, 236, 236);
+    flex: 1 1 30%;
+    padding: 2rem;
 }
 
 .btn-container {
+    display:flex;
+    flex-direction: column;
     background-color: rgb(190, 184, 184);
+    flex: 1 1 35%;
+    padding: 2rem;
+}
+
+.btn-container span {
+    margin-top: 1rem;
 }
 
 /* ============ */
@@ -95,4 +120,29 @@ body {
 .odin-text {
     font-size: 6rem;
     font-family: 'Shadows Into Light', cursive;
+}
+
+.btn-container a {
+    text-decoration: none;
+}
+
+/* ============ */
+/* Button */
+/* ============ */
+
+.btn {
+    width: 12rem;
+    height: 2.5rem;
+    background-color: darkolivegreen;
+    border: none;
+    color: white;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: rgb(119, 145, 71);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
